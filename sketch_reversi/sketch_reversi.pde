@@ -11,3 +11,7 @@ void setup() {
 void draw() {
   b.show();
 }
+
+void mousePressed() {
+  b.put(mouseX, mouseY);
+}
