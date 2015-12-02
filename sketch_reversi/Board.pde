@@ -1,21 +1,20 @@
 class Board {
   int posX, posY;
   int cellSize = 50;
-  int[][] cells;
+  int[][] cells = {
+                    {0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 2, 1, 0, 0, 0},
+                    {0, 0, 0, 1, 2, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0}
+                  };
 
   Board() {
     posX = 50;
     posY = 50;
-    cells = new int[8][8];
-    for (int ix = 0; ix < 8; ix++) {
-      for (int iy = 0; iy < 8; iy++) {
-        cells[ix][iy] = 0;
-      }
-    }
-    cells[3][3] = 2;
-    cells[4][3] = 1;
-    cells[3][4] = 1;
-    cells[4][4] = 2;
   }
 
   void show() {
